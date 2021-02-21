@@ -1,0 +1,9 @@
+/**
+ * 
+ */
+/**
+ * @author sayture
+ *
+ */
+module StringFind {
+}
