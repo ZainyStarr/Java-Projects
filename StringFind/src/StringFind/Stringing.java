@@ -3,7 +3,7 @@ import java.util.Scanner;
 public class Stringing {
 
 	public static void main (String [] args) {
-
+System.out.println("Enter The String:");
 Scanner MyStr=new Scanner(System.in);
  String Str=MyStr.nextLine();
 				 //a random string
@@ -13,6 +13,7 @@ Scanner MyStr=new Scanner(System.in);
 		int[] Store = new int[StrLen];
 
 		char[] strChr=Str.toCharArray(); //
+		System.out.println("Enter The String You Want To Find:");
 
 		String ToFind=MyStr.nextLine();
 
@@ -22,7 +23,7 @@ Scanner MyStr=new Scanner(System.in);
 		char[] ToFindArr=ToFind.toCharArray(); //
 
 
-		int obs=0; //for observer...we're gonna need that to know if any Substrings were found
+		int obs=0; 
 
 		int u;
 
@@ -32,7 +33,7 @@ Scanner MyStr=new Scanner(System.in);
 		for (int i=0;i<StrLen;i++) {
 
 
-			char chr = Str.charAt(i); //checking all characters
+			char chr = Str.charAt(i);
 
 
 			if(chr ==ToFindArr[0]) { //checking if the first character of the substring(ToFind) is there
@@ -59,7 +60,7 @@ Scanner MyStr=new Scanner(System.in);
 
 
 
-						System.out.println("DEBUG : String Found at " + i);
+						//System.out.println("DEBUG : String Found at " + i);
 
 						obs=1; 
 
@@ -76,7 +77,7 @@ Scanner MyStr=new Scanner(System.in);
 
 		int b=1;
 
-		if(obs==1) {///////////////////////////////////////////////
+		if(obs==1) {
 
 			for(int v=0;v<StrLen;v++) {
 
@@ -100,9 +101,9 @@ Scanner MyStr=new Scanner(System.in);
 				}
 			}
 		}else {
-			System.out.println("{{{{what u entered was not found}}}}");
+			System.out.println("Error : String Not Found.");
 
-		}///////////////////////////////////////////////////////////
+		}
 
 
 
