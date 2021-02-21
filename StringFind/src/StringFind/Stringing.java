@@ -6,13 +6,12 @@ public class Stringing {
 System.out.println("Enter The String:");
 Scanner MyStr=new Scanner(System.in);
  String Str=MyStr.nextLine();
-				 //a random string
 
 		int StrLen=Str.length();
 
 		int[] Store = new int[StrLen];
 
-		char[] strChr=Str.toCharArray(); //
+		char[] strChr=Str.toCharArray(); 
 		System.out.println("Enter The String You Want To Find:");
 
 		String ToFind=MyStr.nextLine();
@@ -20,7 +19,7 @@ Scanner MyStr=new Scanner(System.in);
 		int ToFindLen=ToFind.length();
 
 
-		char[] ToFindArr=ToFind.toCharArray(); //
+		char[] ToFindArr=ToFind.toCharArray(); 
 
 
 		int obs=0; 
@@ -54,7 +53,7 @@ Scanner MyStr=new Scanner(System.in);
 
 
 					if(u==ToFindLen-1) {
-						//-1 bcuz y<ToFindLen and not y<=ToFindLen
+						//-1 because y < ToFindLen and not y <= ToFindLen
 						q++;
 						Store[q]=i;
 
@@ -86,7 +85,7 @@ Scanner MyStr=new Scanner(System.in);
 				if (v==Store[b]) {
 
 					System.out.print("(");     
-					System.out.print(ToFind); //adding the brackets
+					System.out.print(ToFind); //just adding the brackets
 					System.out.print(")");		
 
 
